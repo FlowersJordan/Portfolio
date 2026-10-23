@@ -1,5 +1,5 @@
 body {
-    background-color: #bac2f328;
+    background-color: whitesmoke;
     font-family: Arial, sans-serif;
 }
 
@@ -7,11 +7,15 @@ h1, h2 {
     color:darkolivegreen;
 }
 
+header {
+    background-color: whitesmoke;
+    justify-content: space-between;
+    display: flex;
+}
+
 
 nav {
-    background-color: flushwhite;
-    padding: 10px;
-    justify-content: space-between;
+    background-color: whitesmoke;
     align-items: center;
     padding: 10px;
     display: flex;
