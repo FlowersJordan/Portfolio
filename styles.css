@@ -1,0 +1,33 @@
+body {
+    background-color: #bac2f328;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color:darkolivegreen;
+}
+
+
+nav {
+    background-color: flushwhite;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+
+
+.project {
+    padding: 10px;
+    border: 2px solid darkolivegreen;
+    margin-bottom: 10px;
+}
