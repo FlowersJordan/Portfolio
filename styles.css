@@ -35,7 +35,7 @@ nav ul {
     padding: 10px;
     border: 2px solid darkolivegreen;
     margin-bottom: 10px;
-    max-width: 400px;
+    
     margin-right: auto;
 }
 
@@ -51,13 +51,15 @@ nav ul {
 main {
     padding: 5px;
     margin: 0 auto;
+    max-width: 800px;
 }
 
 a {
     color: darkolivegreen;
     text-decoration: none;
+    text-decoration: underline;
 }   
 a:hover {
-    color: orange;
+    color: navy;
     text-decoration: underline;
 }
