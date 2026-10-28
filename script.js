@@ -20,19 +20,34 @@ projects.forEach(project => {
 });
 
 const projData = [
-    { title: "Project 1", language: "Python", description: "This is a Python project." },
-    { title: "Project 2", language: "Javascript", description: "This is a Javascript project." },
-    { title: "Project 3", language: "html", description: "This is an HTML project." }
+    { title: "Project 1", language: "Python", description: "This is a Python project.", link: "https://example.com/project1" },
+    { title: "Project 2", language: "Javascript", description: "This is a Javascript project.", link: "https://example.com/project2" },
+    { title: "Project 3", language: "html", description: "This is an HTML project.", link: "https://example.com/project3" }
 ];
 
-function displayProjects(project){
+function createProjects(project){
     const card = document.createElement("article");
-    card.textContent = `${project.title} - ${project.language}: ${project.description}`;
-    return card;
-};
+    const title = document.createElement("h3");
+    title.textContent = project.title;
+    const language = document.createElement("p");
+    language.textContent = `Language: ${project.language}`;
+    const description = document.createElement("p");
+    description.textContent = project.description;
+    const link = document.createElement("a");
+    link.textContent = "View Project";
+    link.href = project.link;
+    link.target = "_blank";
 
-const projectCard = document.querySelector("#container");
+    card.appendChild(title);
+    card.appendChild(language);
+    card.appendChild(description);
+    card.appendChild(link);
+    card.classList.add("project");
+    return card;
+}
+
+const projectCard = document.querySelector(".container");
 projData.forEach(project => {
-    const card = displayProjects(project);
+    const card = createProjects(project);
     projectCard.appendChild(card);
 });
