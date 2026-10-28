@@ -67,3 +67,7 @@ a:hover {
     color: navy;
     text-decoration: underline;
 }
+
+.active-border {
+    border: 2px solid navy;
+}
